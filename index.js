@@ -28,14 +28,14 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 // const prompt = "Explain how AI works";
 
 // const uid = generateUniqueId();
-app.get('/',async (req, res) => {
-    res.send(200).json({success: true,message:"REACHED"});
-});
+//app.get('/',async (req, res) => {
+ //   res.send(200).json({success: true,message:"REACHED"});
+//});
 let currentCount=87;
 var currIndex = 87;
 var currTagId=3514;
 // console.log(JobTitles[currIndex])
-app.get("/tags")
+//app.get("/tags")
     
   const tags=  async (req, res) => {
     try {

@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI("AIzaSyBFUQkWOOUUDFJ1AoYKnx2sjNjkGkRlZTk");
+const genAI = new GoogleGenerativeAI("AIzaSyAB1w7APtk8CthX1m8EubVkfmE5n-ZYF-Y");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // const prompt = "Explain how AI works";

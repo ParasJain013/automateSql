@@ -35,7 +35,9 @@ let currentCount=84;
 var currIndex = 84;
 var currTagId=3488;
 // console.log(JobTitles[currIndex])
-app.get("/tags", async (req, res) => {
+app.get("/tags")
+    
+  const tags=  async (req, res) => {
     try {
         console.log("CURRENT INDEX: ", currentCount++, " JOB ID: ", JobTitles.JobTitles[currIndex][0], " JOB TITLE: ", JobTitles.JobTitles[currIndex][1]);
 
@@ -60,12 +62,12 @@ app.get("/tags", async (req, res) => {
 
         console.log("Processed tags:", tags);
         currIndex++;
-        res.status(200).json({ success: true, tags });
+        // res.status(200).json({ success: true, tags });
     } catch (error) {
         console.error("Error in /tags:", error.message);
-        res.status(500).json({ success: false, message: "Failed to process tags" });
+        // res.status(500).json({ success: false, message: "Failed to process tags" });
     }
-});
+};
 
 
 
@@ -75,7 +77,8 @@ app.listen(PORT,()=>{
     setInterval(async () => {
 
         try {
-            const response = await fetch(`http://localhost:${PORT}/tags`);
+            tags()
+            // const response = await fetch(`http://localhost:${PORT}/tags`);
             // console.log(response.data);
             // const response = await axios.get(`http://localhost:${PORT}/imageGenerate`);
             // console.log("Response from /imageGenerate:", response.data);

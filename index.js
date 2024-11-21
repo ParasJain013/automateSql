@@ -69,7 +69,7 @@ var currTagId=3530;
     }
 };
 app.get('/',async (req, res) => {
-    res.sendStatus(200).json({success: true,message:"REACHED"});
+    res.json({success: true,message:"REACHED"}).sendStatus(200);
 });
 
 

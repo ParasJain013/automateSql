@@ -31,8 +31,8 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 //app.get('/',async (req, res) => {
  //   res.send(200).json({success: true,message:"REACHED"});
 //});
-let currentCount=87;
-var currIndex = 88;
+let currentCount=103;
+var currIndex = 103;
 var currTagId=3530;
 // console.log(JobTitles[currIndex])
 //app.get("/tags")
@@ -68,7 +68,9 @@ var currTagId=3530;
         // res.status(500).json({ success: false, message: "Failed to process tags" });
     }
 };
-
+app.get('/',async (req, res) => {
+    res.send(200).json({success: true,message:"REACHED"});
+});
 
 
 app.listen(PORT,()=>{

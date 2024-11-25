@@ -31,9 +31,9 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 //app.get('/',async (req, res) => {
  //   res.send(200).json({success: true,message:"REACHED"});
 //});
-let currentCount=4022;
-var currIndex = 4022;
-var currTagId=73005;
+let currentCount=4444;
+var currIndex = 4444;
+var currTagId=77936;
 // console.log(JobTitles[currIndex])
 //app.get("/tags")
     

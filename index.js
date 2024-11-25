@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI("AIzaSyAzcsMm7IiKiGnJ7GBYBhU1AmjKs8F_pdg");
+const genAI = new GoogleGenerativeAI("AIzaSyAJAEhSZD7-IYwPPFCjRRpvoWJ2XTs8As8");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // const prompt = "Explain how AI works";
@@ -31,9 +31,9 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 //app.get('/',async (req, res) => {
  //   res.send(200).json({success: true,message:"REACHED"});
 //});
-let currentCount=3218;
-var currIndex = 3218;
-var currTagId=62501;
+let currentCount=4022;
+var currIndex = 4022;
+var currTagId=73005;
 // console.log(JobTitles[currIndex])
 //app.get("/tags")
     

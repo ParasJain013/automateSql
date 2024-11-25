@@ -33,7 +33,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 //});
 let currentCount=4444;
 var currIndex = 4444;
-var currTagId=77936;
+var currTagId=77937;
 // console.log(JobTitles[currIndex])
 //app.get("/tags")
     
